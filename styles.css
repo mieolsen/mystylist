@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"
+}
+
+header {
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+.logo {
+	background-color: deeppink;
+	height: 60px;
+	grid-column: 7 / span 2;
+}
+.search {
+	grid-column: 12 / span 2;
+}
+
+.search textarea {
+	width:100%
+}
+
+.head-icons {
+	grid-column: 12 / span 1;
+	display: grid;
+	grid-template-columns: repeat(2, [col-start] 1fr);
+	align-items: center;
+}
+
+.bruger {
+	font-size: 20px;
+	text-align: center;
+	grid-column: col-start / span 1;
+	
+	
+	
+}
+.kurv {
+	
+	font-size: 20px;
+	text-align: center;
+	grid-column: 2 / span 1;
+	
+}
+
+.book {
+	background-color: blueviolet;
+	height: 30px;
+	grid-column: 13 / span 1;
+}
+
+
+
+
+
+
+
+* {font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif"}
+
+nav {
+  overflow: hidden;
+  display:flex;
+  justify-content: space-around;
+}
+
+nav a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.styling-drop, .behandling-drop {
+  float: left;
+  overflow: hidden;
+}
+
+.styling-drop .dropknap1, .behandling-drop .dropknap2 {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: white;
+  margin: 0;
+}
+
+nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:hover .dropknap2, .dropknap2:focus {
+  background-color: #D2A2A6;
+}
+
+.style-indhold, .behandling-indhold {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.style-indhold a, .behandling-indhold a  {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.style-indhold a:hover, .behandling-indhold a:hover {
+  background-color: #D2A2A6;
+}
+
+.visboks {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+footer {
+	text-align: center;
+	color: white;
+	background-color: #D2A2A6;
+	height: 60px;
+	padding-top:20px;
+}
+
+
+
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	
+}
+.hero {
+	background-color: darkmagenta;
+	height: 500px;
+	grid-column: col-start / span 14;
+}
+
+
+.kurserknap {
+	text-decoration: none;
+	color:white;
+	background-color:rgba(255,255,255,0.40);
+	border-radius: 40px;
+	padding: 10px;
+	font-size: 20px;
+
+}
+
+.covidbox {
+	background-color: #F6F6F6;
+	grid-column: col-start / span 7;
+	display: grid;
+	grid-template-columns: repeat(7, [col-start] 1fr);
+	padding-bottom: 50px;
+}
+.covidbox h2 {
+text-align: center;
+grid-column: 2 / span 5;
+}
+
+.covidbox p {
+text-align: center;
+grid-column: 2 / span 5;
+}
+
+.covidbillede {
+	background-color: darkmagenta;
+	height: 550px;
+	grid-column: 2 / span 5;
+	
+	
+}
+
+.volkommenbox {
+	background-color: #F6F6F6;
+	grid-column: 8 / span 7;
+	display: grid;
+	grid-template-columns: repeat(7, [col-start] 1fr);
+	padding-bottom: 50px;
+}
+.volkommenbox h2 {
+text-align: center;
+grid-column: 2 / span 5;
+}
+
+.volkommenbox p {
+text-align: center;
+grid-column: 2 / span 5;
+}
+
+.volkommenbillede {
+	background-color: darkmagenta;
+	height: 550px;
+	grid-column: 2 / span 5;
+	
+	
+}
+
+.reviews{
+	
+	grid-column: col-start / span 14;
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	padding-bottom: 50px;
+	text-align: center;
+}
+.reviews h2 {
+	text-align: center;
+	grid-column: col-start / span 14;
+}
+
+.review-1 {
+	grid-column: 2 / span 3;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #F6F6F6;
+	margin: 3px;
+}
+.review-2 {
+	grid-column: 5 / span 3;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #F6F6F6;
+	margin: 3px;
+}.review-3 {
+	grid-column: 8 / span 3;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #F6F6F6;
+	margin: 3px;
+}.review-4 {
+	grid-column: 11 / span 3;
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color: #F6F6F6;
+	margin: 3px;
+}
+
+
+
+
+
+/* bryllup------------------------------------------- */
+
+.hero {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.heroimg {
+	width: 100%;
+	height: 500px;
+}
+
+.herotxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 50px;
+}
+
+.herotxt h1 {
+	margin-bottom: 20px;
+}
+
+.overlay {
+	background-color: black;
+	position: absolute;
+	height: 500px;
+	width: 100%;
+	 top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	opacity: 40%;
+	
+}
+
+.pakke1 ul, .pakke2 ul, .pakke3 ul {
+	list-style: none;
+	padding-left:0px;;
+}
+
+
+.uncheck {
+	opacity: 40%;
+}
+
+.pakke1 h3, .pakke2 h3, .pakke3 h3 {
+	text-align: center;
+}
+
+.pakke1, .pakke2, .pakke3 {
+	margin: 70px 10px 60px 10px;
+	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
+	padding: 20px 40px 60px 40px;
+}
+
+.pakke1 {
+	grid-column: 2 / span 4;
+	
+}
+.pakke2 {
+	grid-column: 6 / span 4;
+	
+}
+
+.pakke3 {
+	grid-column: 10 / span 4;
+	
+}
+
+.info {
+	grid-column: col-start / span 14;
+	text-align: center;
+}
+
+.priser-brud {
+	grid-column: col-start / span 14;
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	background-color: #F6F6F6;
+	margin: 60px 0 60px 0 ;
+	
+}
+
+.rakke1 {
+	grid-column: 2 / span 5;
+}
+.rakke2 {
+	grid-column: 7 / span 1;
+}
+
+.rakke3 {
+	grid-column: 8 / span 5;
+}
+.rakke4 {
+	grid-column: 13 / span 1;
+}
+
