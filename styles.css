@@ -36,16 +36,16 @@ header {
 	font-size: 20px;
 	text-align: center;
 	grid-column: col-start / span 1;
+	color: black;
 	
-	
-	
+
 }
 .kurv {
 	
 	font-size: 20px;
 	text-align: center;
 	grid-column: 2 / span 1;
-	
+	color: black;
 }
 
 .book {
@@ -97,7 +97,7 @@ nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:
   background-color: #D2A2A6;
 }
 
-.style-indhold, .behandling-indhold {
+.indhold  {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -106,7 +106,7 @@ nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:
   z-index: 1;
 }
 
-.style-indhold a, .behandling-indhold a  {
+.indhold a {
   float: none;
   color: black;
   padding: 12px 16px;
@@ -115,7 +115,7 @@ nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:
   text-align: left;
 }
 
-.style-indhold a:hover, .behandling-indhold a:hover {
+.indhold a:hover, {
   background-color: #D2A2A6;
 }
 
@@ -334,7 +334,7 @@ grid-column: 2 / span 5;
 	text-align: center;
 }
 
-.priser-brud {
+.priser {
 	grid-column: col-start / span 14;
 	display: grid;
 	grid-template-columns: repeat(14, [col-start] 1fr);
@@ -356,4 +356,334 @@ grid-column: 2 / span 5;
 .rakke4 {
 	grid-column: 13 / span 1;
 }
+
+.prisinfo {
+	text-align: center;
+}
+
+
+.pakkeA {
+	grid-column: 2 / span 6;}
+
+.pakkeA, .pakkeB{ 
+	
+	padding: 70px 100px 0px 100px;
+	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
+	margin: 70px 10px 60px 10px;
+	display: grid;
+	grid-template-rows: 4fr 1fr;
+}
+
+.pakkeB {
+	grid-column: 8 / span 6;
+	
+}
+
+.pakkeA h3, .pakkeB h3 {
+	
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.pakkebeskrivelser {
+	grid-column: row-start / span 1;
+}
+
+.pakkepris {
+	grid-column: 2/ span 1;
+}
+
+
+#manioverskrift, #pedioverskrift, #klipoverskrift, #brynoverskrift, #voksoverskrift {
+	grid-column: 2/ span 6;
+	
+}
+
+/* manicure og pedicure ------------------------------------------------------*/
+
+
+
+
+.manisek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.manisek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(8, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;
+	
+}
+
+
+
+	#maninavn1, #maninavn2, #maninavn3, #manibeskrivelse1, #manibeskrivelse2, #manibeskrivelse3, 	#maninavn4, #maninavn5, #maninavn6, #maninavn7,#manibeskrivelse4, #manibeskrivelse5, #manibeskrivelse6, #manibeskrivelse7   {
+	grid-column:1/ span 1;
+
+}
+
+	#manipris1, #manipris2, #manipris3, #manipris4, #manipris5, #manipris6, #manipris7 {
+	grid-column: 2/ span 1;
+	text-align: center;
+
+}
+
+#manipris1  {
+	
+	grid-row: 1/ span 1;
+}
+
+#manipris2 {
+	
+	grid-row: 3/ span 1;
+}
+
+#manipris3{
+	
+	grid-row: 5/ span 1;
+}
+
+
+#manipris4 {
+	
+	grid-row: row-start/ span 1;
+}
+
+
+#manipris5 {
+	
+	grid-row: 3/ span 1;
+}
+
+
+#manipris6{
+	
+	grid-row: 5/ span 1;
+}
+
+
+#manipris7{
+	
+	grid-row: 7/ span 1;
+}
+
+
+.pedisek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(5, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.pedisek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(5, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;
+	
+}
+
+
+	#pedinavn1, #pedinavn2, #pedinavn3, #pedibeskrivelse1, #pedibeskrivelse3, #pedinavn4, #pedinavn5, #pedinavn6, #pedibeskrivelse5, #pedibeskrivelse6  {
+	grid-column: 1/ span 1;
+
+}
+
+	#pedipris1, #pedipris2, #pedipris3,#pedipris4, #pedipris5, #pedipris6, #pedipris7 {
+	grid-column: 2/ span 1;
+	text-align: center;
+
+}
+
+#pedipris1  {
+	
+	grid-row: 1/ span 1;
+}
+
+#pedipris2 {
+	
+	grid-row: 3/ span 1;
+}
+
+#pedipris3{
+	
+	grid-row: 4/ span 1;
+}
+
+
+#pedipris4 {
+	
+	grid-row: 1/ span 1;
+}
+
+
+#pedipris5 {
+	
+	grid-row: 2/ span 1;
+}
+
+
+#pedipris6{
+	
+	grid-row: 4/ span 1;
+}
+
+
+.klipsek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(2, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.klipsek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(1, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;
+	
+}
+
+	#klipnavn1, #klipnavn2, #klipnavn3 {
+	grid-column: 1/ span 1;
+
+}
+
+	#klippris1, #klippris2, #klippris3 {
+	grid-column: 2/ span 1;
+	text-align: center;
+
+}
+
+#klippris1 {
+	grid-row: row-start/ span 1;
+}
+
+
+/* bryn og vipper ------------------------------------------------------ */
+
+
+.brynsek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.brynsek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;	
+}
+
+	#brynnavn1, #brynnavn2, #brynnavn3, #brynnavn4, #brynnavn5, #brynnavn6, #brynnavn7, #brynnavn8, #brynbeskrivelse6, #brynbeskrivelse7, #brynbeskrivelse8 {
+	grid-column: 1/ span 1;
+
+}
+
+	#brynpris1, #brynpris2, #brynpris3, #brynpris4, #brynpris5, #brynpris6, #brynpris7, #brynpris8  {
+	grid-column: 2/ span 1;
+	text-align: center;
+
+}
+
+#brynpris1, #brynpris6 {
+	grid-row: row-start/ span 1;
+}
+
+#brynpris2 {
+	grid-row: 2/ span 1;
+}
+#brynpris3, #brynpris7{
+	grid-row: 3/ span 1;
+}
+#brynpris4 {
+	grid-row: 4/ span 1;
+}
+#brynpris5, #brynpris8 {
+	grid-row: 5/ span 1;
+}
+
+
+
+.vokssek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(10, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.vokssek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(9, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;	
+}
+
+	#voksnavn1, #voksnavn2, #voksnavn3, #voksnavn4, #voksnavn5, #voksnavn6, #voksnavn7, #voksnavn8, #voksnavn9, #voksnavn10, #voksnavn11, #voksnavn12, #voksnavn13, #voksnavn14, #voksnavn15, #voksnavn16, #voksnavn17, #voksnavn18, #voksnavn19 {
+	grid-column: 1/ span 1;
+
+}
+
+	#vokspris1, #vokspris2, #vokspris3, #vokspris4, #vokspris5, #vokspris6, #vokspris7, #vokspris8, #vokspris9, #vokspris10, #vokspris11, #vokspris12, #vokspris13, #vokspris14, #vokspris15, #vokspris16, #vokspris17, #vokspris18, #vokspris19  {
+	grid-column: 2/ span 1;
+	text-align: center;
+
+}
+
+
+#vokspris1, #vokspris11 {
+	grid-row: 1/ span 1;
+}
+
+#vokspris2, #vokspris12 {
+	grid-row: 2/ span 1;
+}
+#vokspris3, #vokspris13 {
+	grid-row: 3/ span 1;
+}
+#vokspris4, #vokspris14 {
+	grid-row: 4/ span 1;
+}
+#vokspris5, #vokspris15 {
+	grid-row: 5/ span 1;
+}
+#vokspris6, #vokspris16 {
+	grid-row: 6/ span 1;
+}
+#vokspris7, #vokspris17 {
+	grid-row: 7/ span 1;
+}
+#vokspris8, #vokspris18 {
+	grid-row: 8/ span 1;
+}
+#vokspris9, #vokspris19 {
+	grid-row: 9/ span 1;
+}
+#vokspris10 {
+	grid-row: 10/ span 1;
+}
+
+
+
 
