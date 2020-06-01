@@ -362,6 +362,8 @@ grid-column: 2 / span 5;
 }
 
 
+
+
 .pakkeA {
 	grid-column: 2 / span 6;}
 
@@ -373,6 +375,43 @@ grid-column: 2 / span 5;
 	display: grid;
 	grid-template-rows: 4fr 1fr;
 }
+
+.pakkec, .pakked{ 
+	
+	padding: 70px 100px 20px 100px;
+	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
+	margin: 70px 10px 60px 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
+
+}
+
+
+.pakkec {
+	grid-column: 2 / span 6;}
+
+.pakked {
+	grid-column: 8 / span 6;
+	display: grid;
+	grid-template-columns: repeat(2, [col-start] 1fr);
+}
+
+#eyelinerbeskrivelser {
+	grid-column: col-start / span 2;
+}
+
+#eyelinepris1 { 
+	grid-column: col-start / span 1;
+	text-align: center;
+}
+
+#eyelinepris2 {
+	grid-column: 2 / span 1;
+	text-align: center;
+}
+
+
+
 
 .pakkeB {
 	grid-column: 8 / span 6;
@@ -391,7 +430,20 @@ grid-column: 2 / span 5;
 
 .pakkepris {
 	grid-column: 2/ span 1;
+	text-align: center;
 }
+
+
+
+
+
+.permanentbeskrivelse {
+	grid-column: col-start / span 14;
+	background-color: #F6F6F6;
+	padding: 70px;
+}
+
+
 
 
 #manioverskrift, #pedioverskrift, #klipoverskrift, #brynoverskrift, #voksoverskrift {
