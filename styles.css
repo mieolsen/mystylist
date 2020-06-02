@@ -8,9 +8,17 @@ body {
 h1 {
 	font-family: 'Lora', serif;
 }
-.reviews h3, .reviews h2, .covidbox h2, .volkommenbox h2, .pakke1 h3, .pakke2 h3, .pakke3 h3, .info h2  {
+.reviews h3, .reviews h2, .covidbox h2, .volkommenbox h2, .pakke1 h3, .pakke2 h3, .pakke3 h3, .info h2, .pakkeA h3, .pakkeB h3, .pakkec h3, .pakked h3 {
 	font-family: 'Lora', serif;
+	text-decoration: none;
+	font-weight: 100;
 }
+
+
+h3 {
+	font-size: 25px;
+	
+} 
 
 h4 {
 	font-size: 20px;
@@ -343,6 +351,7 @@ margin: 0;
 	margin: 70px 10px 60px 10px;
 	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
 	padding: 20px 40px 60px 40px;
+	
 }
 
 .pakke1 {
@@ -370,6 +379,7 @@ margin: 0;
 	grid-template-columns: repeat(14, [col-start] 1fr);
 	background-color: #F6F6F6;
 	margin: 60px 0 60px 0 ;
+	padding-bottom: 30px;
 	
 }
 
@@ -399,7 +409,7 @@ margin: 0;
 
 .pakkeA, .pakkeB{ 
 	
-	padding: 70px 100px 60px 100px;
+	padding: 50px 100px 80px 100px;
 	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
 	margin: 70px 10px 60px 10px;
 	display: grid;
@@ -409,7 +419,7 @@ margin: 0;
 
 .pakkec, .pakked{ 
 	
-	padding: 70px 100px 20px 100px;
+	padding: 70px 100px 50px 100px;
 	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
 	margin: 70px 10px 60px 10px;
 	display: grid;
@@ -480,6 +490,7 @@ margin: 0;
 	grid-column: col-start / span 14;
 	background-color: #F6F6F6;
 	padding: 70px;
+	margin-top: 40px;
 }
 
 
@@ -717,7 +728,7 @@ margin: 0;
 	grid-row: 5/ span 1;
 }
 
-
+/*voks side--------------------------------------------------------------------------------------------------*/
 
 .vokssek1 {
 	grid-column: 2/ span 6;
@@ -780,6 +791,225 @@ margin: 0;
 #vokspris10 {
 	grid-row: 10/ span 1;
 }
+
+
+
+/* bryllup side ----------------------------------------------------------------------------------------------------------------------- */
+#proveoverskrift {
+	grid-column: 2/ span 6;
+}
+#pigeoverskrift {
+	grid-column: 8/ span 6;
+}
+
+.provesek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+
+.pigesek1 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;
+	
+}
+
+
+
+	#provenavn1,  #provenavn2,  #provenavn3, #provebeskrivelse1,  #provebeskrivelse2, #provebeskrivelse3 {
+	grid-column:1/ span 1;
+
+}
+
+#pigenavn1, #pigenavn2,  #pigenavn3, #pigebeskrivelse1, #pigebeskrivelse2, #pigebeskrivelse3  {
+	grid-column:1/ span 1;
+
+}
+
+	#provepris1, #provepris2, #provepris3, #pigepris1, #pigepris2, #pigepris3 {
+	grid-column: 2/ span 1;
+	text-align: center;
+		color:#882A3F;
+
+}
+
+#provepris1  {
+	
+	grid-row: 1/ span 1;
+}
+
+#provepris2 {
+	
+	grid-row: 3/ span 1;
+}
+
+#provepris3{
+	
+	grid-row: 5/ span 1;
+}
+
+#pigepris1  {
+	
+	grid-row: 1/ span 1;
+}
+
+#pigepris2 {
+	
+	grid-row: 3/ span 1;
+}
+
+#pigepris3{
+	
+	grid-row: 5/ span 1;
+}
+
+
+#koreoverskrift {
+	grid-column: 2/ span 6;
+}
+
+.koresek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(2, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+
+
+	#korenavn1, #koreeskrivelse1 {
+	grid-column: 1/ span 1;
+	
+
+}
+
+	#korepris1  {
+	grid-column: 2/ span 1;
+	text-align: center;
+		color:#882A3F;
+
+}
+
+#korepris1 {
+	grid-row: row-start/ span 1;
+}
+
+
+
+/* styling hår og makeup prisliste -----------------------------------------------------------------------------------------------------------*/
+
+
+#konfoverskrift {
+	grid-column: 2/ span 6;
+}
+.konfsek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(2, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.konfsek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(1, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;
+	
+}
+
+	#konfnavn1, #konfnavn2, #konfnavn3, #konfbeskrivelse1, #konfbeskrivelse2, #konfbeskrivelse3 {
+	grid-column: 1/ span 1;
+
+}
+
+	#konfpris1, #konfpris2, #konfpris3 {
+	grid-column: 2/ span 1;
+	text-align: center;
+		color:#882A3F;
+
+}
+
+#konfpris1 {
+	grid-row: row-start/ span 1;
+}
+
+
+/* styling ansigstbehandlinger prisliste -----------------------------------------------------------------------------------------------------------*/
+
+#tillagoverskrift {
+	grid-column: 2/ span 6;
+}
+.tillagsek1 {
+	grid-column: 2/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+		grid-template-rows: repeat(2, [row-start] minmax(min-content, max-content));
+	margin: 20px 20px 20px 0px;
+	
+}
+
+.tillagsek2 {
+	grid-column: 8/ span 6;
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	grid-template-rows: repeat(1, [row-start] minmax(min-content, max-content));
+	margin: 20px 0px 20px 20px;
+	
+}
+
+	#tillagnavn1, #tillagbeskrivelse1, #tillagnavn2, #tillagbeskrivelse2, #tillagnavn3, #tillagbeskrivelse3, #tillagnavn4, #tillagbeskrivelse4, #tillagnavn5, #tillagbeskrivelse5, #tillagnavn6, #tillagbeskrivelse6 {
+	grid-column: 1/ span 1;
+
+}
+
+
+/* kursus siden -----------------------------------------------------------------------------------------------------------*/
+.kursusbeskrivelse {
+	grid-column: 1/ span 14;
+	background-color: #F6F6F6;
+	padding: 50px;
+	margin-bottom: 20px;
+	
+}
+.kursusoverskrift {
+		grid-column: 1/ span 14;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.pakke1, .pakke2, .pakke3 {
+	display: grid;
+	grid-template-rows: 3fr 0.2fr ;
+}
+
+.grupperkurser {
+	grid-column: 1/ span 14;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 50px;
+	text-align: center;
+	background-color: #F6F6F6;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	
+}
+.grupperkurser h3 {
+	grid-column: 1/ span 3;
+	´
+}
+
 
 
 .mereinfo {
