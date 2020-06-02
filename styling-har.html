@@ -9,196 +9,168 @@
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
 </head>
-	
-	
+
 <body>
 <header>
-  <section class="logo">
-	  <a href="index.html">
-		  <img alt="logo" src="billeder/logo.jpg"> </a>
-	</section>
-  <section class="search">
-    <textarea> </textarea>
+  <section class="logo"> <a href="index.html"> <img alt="logo" src="billeder/logo.jpg"> </a> </section>
+  <section class="head-icons"> <a href="#" class="bruger"> <i class="fa fa-user-o" aria-hidden="true"></i></a> <a href="#" class="kurv"><i class="fa fa-shopping-basket" aria-hidden="true"></i> </a>
+    <section class="book"> <a class="bookknap" href="#">Book her</a> </section>
   </section>
-  <section class="head-icons">
-    <a href="#" class="bruger"> <i class="fa fa-user-o" aria-hidden="true"></i></a>
-    <a href="#" class="kurv"><i class="fa fa-shopping-basket" aria-hidden="true"></i> </a>
- <section class="book">
-	<a class="bookknap" href="#">Book her</a>
-	</section> 
-	</section>
-  
+  <section class="search">
+    <input type="text" value="Søg" >
+  </section>
 </header>
-	
-		<nav>
-	
+<nav>
   <div class="styling-drop">
     <button class="dropknap1" onclick="styleFunction()">Styling <i class="fa fa-caret-down"></i> </button>
-    <div class="indhold" id="styleDropdown"> 
-		<a href="bryllup.html">Bryllupsstyling</a> 
-		<a href="styling-har.html">Styling af hår og makeup</a> 
-	 </div>
+    <div class="indhold" id="styleDropdown"> <a href="bryllup.html">Bryllupsstyling</a> <a href="styling-har.html">Styling af hår og makeup</a> </div>
   </div>
-	
   <div class="behandling-drop">
     <button class="dropknap2" onclick="behandlingFunction()">Behandlinger <i class="fa fa-caret-down"></i> </button>
-    <div class="indhold" id="behandlingDropdown">
-		<a href="ansigtsbehandlinger.html">Ansigtsbehandlinger</a> 
-		<a href="hudpleje.html">Skræddersyet hudpleje</a> 
-		<a href="manicure.html">Manicure & pedicure</a>
-		<a href="bryn.html">Bryn & vipper</a>
-		<a href="voks.html">Voks</a>
-		<a href="permanent.html">Permanent makeup</a>
-		<a href="kropsbehandlinger.html">Kropsbehandlinger</a>
-	</div>
+    <div class="indhold" id="behandlingDropdown"> <a href="ansigtsbehandlinger.html">Ansigtsbehandlinger</a> <a href="hudpleje.html">Skræddersyet hudpleje</a> <a href="manicure.html">Manicure & pedicure</a> <a href="bryn.html">Bryn & vipper</a> <a href="voks.html">Voks</a> <a href="permanent.html">Permanent makeup</a> <a href="kropsbehandlinger.html">Kropsbehandlinger</a> </div>
   </div>
-	
-  	<a href="kurser.html">Kurser</a> 
-	<a href="om.html">Om</a> 
-	<a href="shop.html">Shop</a> 
-	<a href="kontakt.html">Kontakt</a> 
-
-	</nav>
-	
-
+  <a href="kurser.html">Kurser</a> <a href="om.html">Om</a> <a href="shop.html">Shop</a> <a href="kontakt.html">Kontakt</a> </nav>
 <main>
-  <div class="wrapper">
-    <section class=hero>
-		<img class="heroimg" src="billeder/random.jpg" alt="Bryllupsbillede">
-		<article class="overlay"></article>
-		<aricle class="herotxt" >
-			<h1> Hår og makeup</h1>
-		</aricle>
-	</section>
+<div class="wrapper">
+<section class=hero> <img class="heroimg" src="billeder/random.jpg" alt="Bryllupsbillede">
+  <article class="overlay"></article>
+  <aricle class="herotxt" >
+    <h1> Hår og makeup</h1>
+  </aricle>
+</section>
 	
 	
-	<section class="pakke1">
-		<h3>Hår</h3>
-		<p>Om du skal på den røde løber eller blot en middag, så ønsker enhver kvinde at se ordentlig ud. Håret skal være i orden og det samme er gældende med makeup. </p>
-		<p class="prisinfo">Styling i salonen</p>
-		<h3>999,-</h3>
-		<p class="prisinfo">Styling hos dig</p>
-		<h3>1499,-</h3>
-	</section>
 	
-	<section class="pakke2">
-		<h3>Makeup</h3>
-		<p>Makeup er for enhver kvinde. 
-			Men makeup kan være ens værste 
-			fjende, men ved man hvad og 
-			hvordan kan den blive din bedste 
-			ven. Har du ikke de skills, lad os 
-			om opgaven</p>
-		
-		<p class="prisinfo">Styling i salonen</p>
-		<h3>890,-</h3>
-		<p class="prisinfo">Styling hos dig</p>
-		<h3>1499,-</h3>
-	</section>
+<section class="pakke1">
+  <article class="pakkebeskrivelser">
+    <h3>Hår</h3>
+    <p>Om du skal på den røde løber eller blot en middag, så ønsker enhver kvinde at se ordentlig ud. Håret skal være i orden og det samme er gældende med makeup. </p>
+  </article>
+<article class="pakkepris">
+  <p class="prisinfo">Styling i salonen</p>
+  <h3>999,-</h3>
+  <p class="prisinfo">Styling hos dig</p>
+  <h3>1499,-</h3>
+	</article>
+</article>
+</section>
+<section class="pakke2">
+<article class="pakkebeskrivelser">
+<h3>Makeup</h3>
+<p>Makeup er for enhver kvinde. 
+  Men makeup kan være ens værste 
+  fjende, men ved man hvad og 
+  hvordan kan den blive din bedste 
+  ven. Har du ikke de skills, lad os 
+  om opgaven</p>
+	  </article>
+<article class="pakkepris">
+<p class="prisinfo">Styling i salonen</p>
+<h3>890,-</h3>
+<p class="prisinfo">Styling hos dig</p>
+<h3>1499,-</h3>
+	</article>
+</section>
+<section class="pakke3">
+<article class="pakkebeskrivelser">
+<h3>Hår og makeup</h3>
+<p>Fuldend look med hår og makeup efter eget ønske til enhver anledning. Hvis du mangler ideen så er stylisten klar med råd og vejledning </p>
+	  </article>
+<article class="pakkepris">
+<p class="prisinfo">Styling i salonen</p>
+<h3>1899,-</h3>
+<p class="prisinfo">Styling hos dig</p>
+<h3>2349,-</h3>
+	</article>
+</section>
+<section class="pakke1">
+<article class="pakkebeskrivelser">
+<h3>Dagmakeup</h3>
+<p>Dagmakeuppen kan kræve sit, for at teaterturen, cafeen eller blot middagen skal blive din succes og ikke være en stress faktor, så står vi klar med vores magiske pensler lige når det passer dig.
+  
+  Få lagt en dagsmake up af en proffesionel, så du kan være stylet lige når du har lyst.</p>
+<p>Styling foregår kun i salonen på denne pakke. </p>
+	  </article>
+<article class="pakkepris">
+<h3>550,-</h3>
+	</article>
+</section>
+<section class="pakke2">
+<article class="pakkebeskrivelser">
+<h3>Hår og makeup 
+  til jobsamtalen </h3>
+<p>At have styr på sig selv og vise at 
+  man har overskud, så skal 
+  udseendet stemme med det. Vi 
+  hjælper med den smukkeste 
+  naturlige makeup og lettere 
+  hårstyling. Slev om håret skal 
+  hænge, så er der mange måder det 
+  kan hænge på. </p>
+	  </article>
+<article class="pakkepris">
+<p class="prisinfo">Styling i salonen</p>
+<h3>995,-</h3>
+<p class="prisinfo">Styling hos dig</p>
+<h3>1550,-</h3>
+	</article>
+</section>
+<section class="pakke3">
+<article class="pakkebeskrivelser">
+<h3>Hår og makeup til konfirmanden</h3>
+<p>En mindeværdig dag skal have en 
+  mindeværdig styling
+  Hår og makeup stylet til sit 
+  yderste og smukkeste stadie, efter 
+  egne ønsker. Har du brug for ideer 
+  og råd, så står stylisten klar med 
+  det.
+  Råd og vejledning ydes fra dag et, 
+  hvor du møder stylisten. </p>
+	  </article>
+<article class="pakkepris">
+<article class="prisinfo">
+  <p >Styling i salonen</p>
+  <h3>1895,-</h3>
+  <p>Styling hos dig</p>
+  <h3>2445,-</h3>
+</article>
+</section>
 	
-		<section class="pakke3">
-		<h3>Hår og makeup</h3>
-		<p>Fuldend look med hår og makeup efter eget ønske til enhver anledning. Hvis du mangler ideen så er stylisten klar med råd og vejledning </p>
-		<p class="prisinfo">Styling i salonen</p>
-		<h3>1899,-</h3>
-		<p class="prisinfo">Styling hos dig</p>
-		<h3>2349,-</h3>
-	</section>
-	  
-	 	<section class="pakke1">
-		<h3>Dagmakeup</h3>
-		<p>Dagmakeuppen kan kræve sit, for at teaterturen, cafeen eller blot middagen skal blive din succes og ikke være en stress faktor, så står vi klar med vores magiske pensler lige når det passer dig.
-
-Få lagt en dagsmake up af en proffesionel, så du kan være stylet lige når du har lyst.</p>
-
-<p>Styling foregår kun i salonen på denne pakke. 
- </p>
 	
-		<h3>550,-</h3>
-	</section>
-	
-	<section class="pakke2">
-		<h3>Hår og makeup 
-til jobsamtalen </h3>
-		<p>At have styr på sig selv og vise at 
-man har overskud, så skal 
-udseendet stemme med det. Vi 
-hjælper med den smukkeste 
-naturlige makeup og lettere 
-hårstyling. Slev om håret skal 
-hænge, så er der mange måder det 
-kan hænge på.
-</p>
-		
-		<p class="prisinfo">Styling i salonen</p>
-		<h3>995,-</h3>
-		<p class="prisinfo">Styling hos dig</p>
-		<h3>1550,-</h3>
-	</section>
-	
-		<section class="pakke3">
-		<h3>Hår og makeup til konfirmanden</h3>
-		<p>En mindeværdig dag skal have en 
-mindeværdig styling
-Hår og makeup stylet til sit 
-yderste og smukkeste stadie, efter 
-egne ønsker. Har du brug for ideer 
-og råd, så står stylisten klar med 
-det.
-Råd og vejledning ydes fra dag et, 
-hvor du møder stylisten.
- </p>
-		<article class="prisinfo">
-		<p >Styling i salonen</p>
-		<h3>1895,-</h3>
-		<p>Styling hos dig</p>
-		<h3>2445,-</h3>
-		</article>
-	</section>
-	  
-	 
-	
-	  
-	  
-	  <section class="info">
-		 <a class="bookknap" href="#">Book her</a>
-	  </section>
-	  
-	  
-	  <section class="priser">
-  		
-		 <h3 id="konfoverskrift"> Prøvesessioner for konfirmanden</h3>
-
-		  <section class="konfsek1">
-		
-		
-    	 <h4 id="konfnavn1">Hår</h4> 
-		 <p id="konfbeskrivelse1">Book en prøvesession til håropsætning, inden din store dag. Her ser
-Vi på, hvad der passer lige netop til din hovedform. Hvis du ved 
-Hvilken kjole du skal have på, tilpasser vi også håret til den, så det 
-Hele spiller på dagen.</p>
-     	<h4 id="konfnavn2">Makeup</h4> 
-			 <p id="konfbeskrivelse2">Har du et specielt look i tankerne, eller er du helt tom for idéer. Så 
-Book en prøvesession af Makeup inden din store dag. Så kan vi 
-Sammen skabe et look som du bliver glad for.</p>
-		 <h4 id="konfpris1">550,-</h4> 
-		 <h4 id="konfpris2">550,-</h4>
-			
-		  </section>
-		  <section class="konfsek2">
-		 <h4 id="konfnavn3">Hår og makeup</h4>	
-			   <p id="konfbeskrivelse2">En mindeværdig dag fortjener en mindeværdig styling af både hår og 
-Makeup, book en prøvesession, så du ikke skal spekulere på hvordan 
-Det bliver på dagen.</p>
-		 <h4 id="konfpris3">950,-</h4>
-		 </section>
-		  
-		
-	  </section>
-	  
-	
-	</div>
-	
+<section class="info"> <a class="bookknap" href="#">Book her</a> </section>
+<section class="priser">
+  <h3 id="konfoverskrift"> Prøvesessioner for konfirmanden</h3>
+  <section class="konfsek1">
+    <h4 id="konfnavn1">Hår</h4>
+    <p id="konfbeskrivelse1">Book en prøvesession til håropsætning, inden din store dag. Her ser
+      Vi på, hvad der passer lige netop til din hovedform. Hvis du ved 
+      Hvilken kjole du skal have på, tilpasser vi også håret til den, så det 
+      Hele spiller på dagen.</p>
+    <h4 id="konfnavn2">Makeup</h4>
+    <p id="konfbeskrivelse2">Har du et specielt look i tankerne, eller er du helt tom for idéer. Så 
+      Book en prøvesession af Makeup inden din store dag. Så kan vi 
+      Sammen skabe et look som du bliver glad for.</p>
+    <h4 id="konfpris1">550,-</h4>
+    <h4 id="konfpris2">550,-</h4>
+  </section>
+  <section class="konfsek2">
+    <h4 id="konfnavn3">Hår og makeup</h4>
+    <p id="konfbeskrivelse2">En mindeværdig dag fortjener en mindeværdig styling af både hår og 
+      Makeup, book en prøvesession, så du ikke skal spekulere på hvordan 
+      Det bliver på dagen.</p>
+    <h4 id="konfpris3">950,-</h4>
+  </section>
+</section>
+<div class="slideshow-container">
+  <div class="billede fade"> <img src="https://cdn7.dissolve.com/p/D1129_19_611/D1129_19_611_1200.jpg" style="width:100%"> </div>
+  <div class="billede fade"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/440px-2010-kodiak-bear-1.jpg" style="width:100%"> </div>
+  <div class="billede fade"> <img src="https://previews.123rf.com/images/jmrocek/jmrocek1911/jmrocek191100010/133248099-an-adorable-cub-and-adult-female-of-brown-bear-ursus-arctos-with-fluffy-coat-united-in-the-middle-of.jpg" style="width:100%"> </div>
+  <a class="prev" onclick="skiftSlide(-1)">&#10094; <!--pil--></a> <a class="next" onclick="skiftSlide(1)">&#10095; <!--pil--></a> </div>
+<br>
+<div class="prikker"> <span class="prik" onclick="angivSlide(1)"></span> <span class="prik" onclick="angivSlide(2)"></span> <span class="prik" onclick="angivSlide(3)"></span> </div>
+<p class="mereinfo"> Er du interesseret i at se flere billeder fra MyStylist. Så gå ind og følg med på vores <a class="link" href="https://www.instagram.com/mystylist/?hl=en">Instagram</a>, og/eller på vores <a class="link" href="https://www.facebook.com/myStylist.stylist">facebook</a> side. </p>
+</div>
 </main>
 <footer>
   <p> myStylist.dk - Godthåbsvej 177 -2720 Vanløse - tlf: XXXXXXXX</p>
