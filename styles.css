@@ -1,8 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 /*skriftypeændringer!!----------------------------------------------------------------------*/
+
+
 body {
 	font-family: 'Noto Serif', serif;
+	
 }
 
 h1 {
@@ -14,69 +17,37 @@ h1 {
 	font-weight: 100;
 }
 
+h1 {
+	font-size: 30px;
+}
+
+ h3 {
+	font-size: 20px;
+	
+} 
+
 
 h3 {
-	font-size: 25px;
+	font-size: 15px;
 	
 } 
 
 h4 {
-	font-size: 20px;
+	font-size: 11px;
 	
 } 
 
 p {
-	font-size: 15px;
+	font-size: 10px;
 	
 }
 
-
-header {
-	display: grid;
-	grid-template-columns: repeat(14, [col-start] 1fr);
-	grid-template-rows: 1fr 1fr;
-	padding-bottom: 20px;
-	padding-top: 20px;
+ul {
+	font-size: 10px;
 }
 
-.logo {
-	grid-row: 1 / span 2;
-	grid-column: 7 / span 2;
-}
-.search {
-	grid-column: 12 / span 2;
-}
 
-.search textarea {
-
-	width:100%
-}
-
-.head-icons {
-	grid-column: 12 / span 2;
-	display: grid;
-	grid-template-columns: repeat(3, [col-start] auto);
-	align-items: center;
-	text-align: center;
-}
-
-.bruger {
-	font-size: 20px;
-	grid-column: col-start / span 1;
-	color: black;
-	
-
-}
-.kurv {
-	font-size: 20px;
-	grid-column: 2 / span 1;
-	color: black;
-}
-
-.book {
-	grid-column: 3 / span 1;
-	
-}
+	/* styling af knappen book nu på alle sider ---------------------------------------------------*/
 
 .bookknap {
 	color: #882A3F;
@@ -86,76 +57,39 @@ header {
 	padding: 10px;
 }
 
+/*priser på alle side farveændring ------------*/	
 
-
-
-nav {
-  overflow: hidden;
-  display:flex;
-  justify-content: space-around;
+.pris {
+	color:#882A3F;
 }
 
-nav a {
-  float: left;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.styling-drop, .behandling-drop {
-  float: left;
-  overflow: hidden;
-}
-
-.styling-drop .dropknap1, .behandling-drop .dropknap2 {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: white;
-  margin: 0;
-}
-
-nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:hover .dropknap2, .dropknap2:focus {
-  background-color: #D2A2A6;
-}
-
-.indhold  {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.indhold a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.indhold a:hover, {
-  background-color: #D2A2A6;
-}
-
-.visboks {
-  display: block;
+.prisinfo h3 {
+	color:#882A3F;
 }
 
 
+/* booking info på flere sider (med tlf nummer) ------------------------------------------- */
+	
+.info {
+	
+	text-align: center;
+}
+.tlf {
+	color:#D2A2A6;
+}
+	
+/* mere info med links til facebook og truspilot og instagram------------------------------------------- */
+.mereinfo {
+	grid-column: 1/ span 14;
+	text-align: center;
+}
 
+.link {
+	
+	color:#D2A2A6
+}
 
-
-
-
+/* styling af footer ---------------------------------------------------*/
 
 
 footer {
@@ -166,21 +100,51 @@ footer {
 	padding-top:20px;
 }
 
+/* styling af hero billede og overlay  ---------------------------------------------------*/
 
-
-
-.wrapper {
-	display: grid;
-	grid-template-columns: repeat(14, [col-start] 1fr);
+.hero {
+	height: 300px;
 	
 }
+
 .hero {
-	background-color: darkmagenta;
-	height: 500px;
-	grid-column: col-start / span 14;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
+.heroimg {
+	width: 100%;
+	height: 300px;
+}
 
+.herotxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	font-size: 50px;
+}
+
+.herotxt h1 {
+	margin-bottom: 20px;
+}
+
+.overlay {
+	background-color: black;
+	position: absolute;
+	height: 300px;
+	width: 100%;
+	 top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	opacity: 40%;
+	
+}	
+
+
+
+/* forside styling---------------------------------------------------*/
 .kurserknap {
 	text-decoration: none;
 	color:white;
@@ -188,12 +152,13 @@ footer {
 	border-radius: 40px;
 	padding: 10px;
 	font-size: 20px;
-
+	
 }
+
 
 .covidbox {
 	background-color: #F6F6F6;
-	grid-column: col-start / span 7;
+	
 	display: grid;
 	grid-template-columns: repeat(7, [col-start] 1fr);
 	padding-bottom: 50px;
@@ -212,15 +177,13 @@ grid-column: 2 / span 5;
 
 .covidbillede {
 	background-color: darkmagenta;
-	height: 550px;
+	height: 300px;
 	grid-column: 2 / span 5;
-	
 	
 }
 
 .volkommenbox {
 	background-color: #F6F6F6;
-	grid-column: 8 / span 7;
 	display: grid;
 	grid-template-columns: repeat(7, [col-start] 1fr);
 	padding-bottom: 50px;
@@ -240,108 +203,101 @@ margin: 0;
 
 .volkommenbillede {
 	background-color: darkmagenta;
-	height: 550px;
+	height: 300px;
 	grid-column: 2 / span 5;
 	
 	
 }
 
+
+
+/* anmeldelser styling-- på forside og kropbehandlinger-------------------------------------------------*/
+
+
 .reviews{
 	
-	grid-column: col-start / span 14;
 	display: grid;
-	grid-template-columns: repeat(14, [col-start] 1fr);
+	grid-template-columns: repeat(2, [col-start] 1fr);
 	padding-bottom: 50px;
 	text-align: center;
 }
 .reviews h2 {
 	text-align: center;
-	grid-column: col-start / span 14;
+	grid-column: col-start / span 2;
 }
 
 .review-1 {
-	grid-column: 2 / span 3;
+	grid-column: 1 / span 1;
 	padding-left: 40px;
 	padding-right: 40px;
 	background-color: #F6F6F6;
 	margin: 3px;
 }
 .review-2 {
-	grid-column: 5 / span 3;
+	grid-column: 2 / span 1 ;
 	padding-left: 40px;
 	padding-right: 40px;
 	background-color: #F6F6F6;
 	margin: 3px;
 }.review-3 {
-	grid-column: 8 / span 3;
+	grid-column: 1 / span 1;
 	padding-left: 40px;
 	padding-right: 40px;
 	background-color: #F6F6F6;
 	margin: 3px;
 }.review-4 {
-	grid-column: 11 / span 3;
+	grid-column: 2 / span 1;
 	padding-left: 40px;
 	padding-right: 40px;
 	background-color: #F6F6F6;
 	margin: 3px;
 }
 
-
-
-.pris {
-	color:#882A3F;
+/* styling af pakker------------------------------------------ */	
+.pakkebeskrivelser {
+	grid-column: row-start / span 1;
 }
 
-.prisinfo h3 {
-	color:#882A3F;
-}
-
-/* bryllup------------------------------------------- */
-
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.heroimg {
-	width: 100%;
-	height: 500px;
-}
-
-.herotxt {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	font-size: 50px;
-}
-
-.herotxt h1 {
-	margin-bottom: 20px;
-}
-
-.overlay {
-	background-color: black;
-	position: absolute;
-	height: 500px;
-	width: 100%;
-	 top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-	opacity: 40%;
+.pakkepris {
+	grid-column: 2/ span 1;
+	text-align: center;
 	
 }
 
-.pakke1 ul, .pakke2 ul, .pakke3 ul {
-	list-style: none;
-	padding-left:0px;;
+/* styling af pakker med 2 på hver rækker på desktop ------------------------------------------- */	
+
+
+.pakkeA, .pakkeB{ 
+	padding: 50px 100px 80px 100px;
+	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
+	margin: 70px 10px 60px 10px;
+	display: grid;
+	grid-template-rows: 1fr auto;
+	
+}
+
+.pakkeA h3, .pakkeB h3 {
+	
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.pakkec, .pakked{ 
+	padding: 70px 100px 50px 100px;
+	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
+	margin: 70px 10px 60px 10px;
+	display: grid;
+	grid-template-rows: 1fr 1fr;
 }
 
 
-.uncheck {
-	opacity: 40%;
+.pakked {
+	
+	display: grid;
+	grid-template-columns: repeat(2, [col-start] 1fr);
 }
+
+/* styling af pakker med 3 på desktopversionen*/
 
 .pakke1 h3, .pakke2 h3, .pakke3 h3 {
 	text-align: center;
@@ -351,91 +307,35 @@ margin: 0;
 	margin: 70px 10px 60px 10px;
 	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
 	padding: 20px 40px 60px 40px;
-	
-}
-
-.pakke1 {
-	grid-column: 2 / span 4;
-	
-}
-.pakke2 {
-	grid-column: 6 / span 4;
-	
-}
-
-.pakke3 {
-	grid-column: 10 / span 4;
-	
-}
-
-.info {
-	grid-column: col-start / span 14;
-	text-align: center;
-}
-
-.priser {
-	grid-column: col-start / span 14;
 	display: grid;
-	grid-template-columns: repeat(14, [col-start] 1fr);
+	grid-template-rows: 3fr 0.2fr ;
+}
+
+
+/*stying af prislister generelt ------------------------------------*/
+.priser {
+	
 	background-color: #F6F6F6;
 	margin: 60px 0 60px 0 ;
-	padding-bottom: 30px;
+	padding: 20px 20px 20px 20px;
 	
 }
 
-.rakke1 {
-	grid-column: 2 / span 5;
-}
-.rakke2 {
-	grid-column: 7 / span 1;
-}
-
-.rakke3 {
-	grid-column: 8 / span 5;
-}
-.rakke4 {
-	grid-column: 13 / span 1;
-}
-
-.prisinfo {
-	text-align: center;
-}
 
 
 
-
-.pakkeA {
-	grid-column: 2 / span 6;}
-
-.pakkeA, .pakkeB{ 
+/* styling af liste på bryllupside ------------------------------------------- */
 	
-	padding: 50px 100px 80px 100px;
-	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
-	margin: 70px 10px 60px 10px;
-	display: grid;
-	grid-template-rows: 1fr auto;
-	
+.uncheck {
+	opacity: 40%;
 }
-
-.pakkec, .pakked{ 
-	
-	padding: 70px 100px 50px 100px;
-	box-shadow: 10px 10px 20px 4px rgba(112,112,112,0.63);
-	margin: 70px 10px 60px 10px;
-	display: grid;
-	grid-template-rows: 1fr 1fr;
+.pakke1 ul, .pakke2 ul, .pakke3 ul {
+	list-style: none;
+	padding-left:0px;
 
 }
 
-
-.pakkec {
-	grid-column: 2 / span 6;}
-
-.pakked {
-	grid-column: 8 / span 6;
-	display: grid;
-	grid-template-columns: repeat(2, [col-start] 1fr);
-}
+/*permanent makeup prisliste ------------------------------------*/
 
 #eyelinerbeskrivelser {
 	grid-column: col-start / span 2;
@@ -453,38 +353,9 @@ margin: 0;
 	
 }
 
-
-
-
-.pakkeB {
-	grid-column: 8 / span 6;
-	
-}
-
-.pakkeA h3, .pakkeB h3 {
-	
-	text-align: center;
-	margin-bottom: 50px;
-}
-
-.pakkebeskrivelser {
-	grid-column: row-start / span 1;
-}
-
-.pakkepris {
-	grid-column: 2/ span 1;
-	text-align: center;
-	
-}
-
 #eyelinepris1 h3, #eyelinepris2 h3, .pakkepris h3 {
 	color: #882A3F;
 }
-
-
-
-
-
 
 .permanentbeskrivelse {
 	grid-column: col-start / span 14;
@@ -494,18 +365,12 @@ margin: 0;
 }
 
 
-
+/* manicure og pedicure ------------------------------------------------------*/
 
 #manioverskrift, #pedioverskrift, #klipoverskrift, #brynoverskrift, #voksoverskrift {
 	grid-column: 2/ span 6;
-	
+
 }
-
-/* manicure og pedicure ------------------------------------------------------*/
-
-
-
-
 .manisek1 {
 	grid-column: 2/ span 6;
 	display: grid;
@@ -794,7 +659,7 @@ margin: 0;
 
 
 
-/* bryllup side ----------------------------------------------------------------------------------------------------------------------- */
+/* bryllup side prisliste  ----------------------------------------------------------------------------------------------------------------------- */
 #proveoverskrift {
 	grid-column: 2/ span 6;
 }
@@ -989,10 +854,6 @@ margin: 0;
 	margin-bottom: 0;
 }
 
-.pakke1, .pakke2, .pakke3 {
-	display: grid;
-	grid-template-rows: 3fr 0.2fr ;
-}
 
 .grupperkurser {
 	grid-column: 1/ span 14;
@@ -1007,22 +868,305 @@ margin: 0;
 }
 .grupperkurser h3 {
 	grid-column: 1/ span 3;
-	´
+	
 }
 
 
 
-.mereinfo {
-	grid-column: 1/ span 14;
+@media only screen and (min-width: 600px) {
+
+
+h1 {
+	font-size: 60px;
+}
+
+h3 {
+	font-size: 25px;
+	
+} 
+
+h4 {
+	font-size: 20px;
+	
+} 
+
+p {
+	font-size: 17px;
+	
+}
+	
+	ul {
+	font-size: 17px;	
+	}
+	
+	
+/* booking info på flere sider (med tlf nummer) ------------------------------------------- */
+	
+.info {
+	grid-column: col-start / span 14;
+	
+}
+
+
+/* styling af header ---------------------------------------------------*/
+
+header {
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	grid-template-rows: 1fr 1fr;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+	
+
+.logo {
+	grid-row: 1 / span 2;
+	grid-column: 7 / span 2;
+}
+.search {
+	grid-column: 12 / span 2;
+}
+
+.search textarea {
+
+	width:100%
+}
+
+.head-icons {
+	grid-column: 12 / span 2;
+	display: grid;
+	grid-template-columns: repeat(3, [col-start] auto);
+	align-items: center;
 	text-align: center;
 }
 
-.link {
+.bruger {
+	font-size: 20px;
+	grid-column: col-start / span 1;
+	color: black;
 	
-	color:#D2A2A6
+
+}
+.kurv {
+	font-size: 20px;
+	grid-column: 2 / span 1;
+	color: black;
+}
+
+.book {
+	grid-column: 3 / span 1;
+	
+}
+
+	
+/* styling af navigationsmenuen på desktopversion ---------------------------------------------------*/
+nav {
+  overflow: hidden;
+  display:flex;
+  justify-content: space-around;
+}
+
+nav a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.styling-drop, .behandling-drop {
+  float: left;
+  overflow: hidden;
+}
+
+.styling-drop .dropknap1, .behandling-drop .dropknap2 {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: white;
+  margin: 0;
+}
+
+nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:hover .dropknap2, .dropknap2:focus {
+  background-color: #D2A2A6;
+}
+
+.indhold  {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.indhold a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.indhold a:hover, {
+  background-color: #D2A2A6;
+}
+
+.visboks {
+  display: block;
 }
 
 
-.tlf {
-	color:#D2A2A6;
+
+
+/* wrapper på alle sider med grid til desktop ---------------------------------------------------*/
+
+.wrapper {
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	
 }
+	
+
+/* hero på desktop version ---------------------------------------------------*/
+
+.hero {
+	height: 500px;
+	grid-column: col-start / span 14;
+}
+
+.heroimg {
+	height: 500px;
+}
+
+
+.herotxt h1 {
+	margin-bottom: 20px;
+}
+
+.overlay {
+
+	height: 500px;
+	
+}	
+	
+	
+/* forside styling ændringer til desktop---------------------------------------------------*/
+
+
+.covidbox {
+	grid-column: col-start / span 7;
+}
+
+
+.covidbillede {
+	height: 550px;
+}
+
+.volkommenbox {
+	grid-column: 8 / span 7;
+	}
+	
+.volkommenbillede {
+	
+	height: 550px;
+
+}
+	
+
+/* desktop ændringer i grid: anmeldelser styling-- på forside og kropbehandlinger-------------------------------------------------*/
+
+
+.reviews{
+	
+	grid-column: col-start / span 14;
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	
+}
+.reviews h2 {
+	
+	grid-column: col-start / span 14;
+}
+
+.review-1 {
+	grid-column: 2 / span 3;
+	
+}
+.review-2 {
+	grid-column: 5 / span 3;
+
+}
+	.review-3 {
+	grid-column: 8 / span 3;
+	
+}.review-4 {
+	grid-column: 11 / span 3;
+	
+
+}
+	
+	
+
+/* ændring i grid!!  styling af pakker med 2 på hver rækker på desktop ------------------------------------------- */	
+
+.pakkeA {
+	grid-column: 2 / span 6;}
+}
+
+
+.pakkec {
+	grid-column: 2 / span 6;}
+
+.pakked {
+	grid-column: 8 / span 6;
+
+}
+.pakkeB {
+	grid-column: 8 / span 6;
+	
+}
+
+
+
+
+/* ændring i grid!!  styling af pakker med 3 på hver rækker på desktop ------------------------------------------- */
+
+
+.pakke1 {
+	grid-column: 2 / span 4;
+	
+}
+.pakke2 {
+	grid-column: 6 / span 4;
+	
+}
+
+.pakke3 {
+	grid-column: 10 / span 4;
+	
+}
+
+
+	
+/*stying af prislister generelt ------------------------------------*/
+.priser {
+	grid-column: col-start / span 14;
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	margin: 60px 0 60px 0 ;
+	padding-bottom: 30px;
+	
+}
+
+
+
+
+
+
+
