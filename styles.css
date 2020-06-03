@@ -15,6 +15,8 @@ h1 {
 	font-family: 'Lora', serif;
 	text-decoration: none;
 	font-weight: 100;
+		color:#882A3F;
+	
 }
 
 h1 {
@@ -228,7 +230,7 @@ footer {
 /* styling af hero billede og overlay  ---------------------------------------------------*/
 
 .hero {
-	height: 300px;
+	height: auto;
 	
 }
 
@@ -236,11 +238,13 @@ footer {
   position: relative;
   text-align: center;
   color: white;
+	
 }
 
 .heroimg {
-	width: 100%;
-	height: 300px;
+	width:100%;
+	
+	
 }
 
 .herotxt {
@@ -256,9 +260,10 @@ footer {
 }
 
 .overlay {
+	
 	background-color: black;
 	position: absolute;
-	height: 300px;
+	height: 100%;
 	width: 100%;
 	 top: 50%;
   left: 50%;
@@ -273,7 +278,7 @@ footer {
 /* Slideshow container */
 .slideshow-container {
 grid-column: 1 / span 14;
-  width: 500px;
+  width: 300px; 
   position: relative;
   margin: auto;
 	margin-top: 30px;
@@ -380,9 +385,9 @@ grid-column: 2 / span 5;
 }
 
 .covidbillede {
-	background-color: darkmagenta;
-	height: 300px;
+	text-align: center;
 	grid-column: 2 / span 5;
+	margin-top: 20px;
 	
 }
 
@@ -406,10 +411,9 @@ margin: 0;
 
 
 .volkommenbillede {
-	background-color: darkmagenta;
-	height: 300px;
+text-align: center;
 	grid-column: 2 / span 5;
-	
+	margin-top: 20px;
 	
 }
 
@@ -428,7 +432,14 @@ margin: 0;
 .reviews h2 {
 	text-align: center;
 	grid-column: col-start / span 2;
+	
 }
+
+.reviews h3 {
+		color:#882A3F;
+
+}
+
 
 .review-1 {
 	grid-column: 1 / span 1;
@@ -764,7 +775,8 @@ margin: 0;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 	grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
-	margin: 20px 0px 20px 20px;	
+	margin: 20px 0px 20px 40px;	
+	
 }
 
 	#brynnavn1, #brynnavn2, #brynnavn3, #brynnavn4, #brynnavn5, #brynnavn6, #brynnavn7, #brynnavn8, #brynbeskrivelse6, #brynbeskrivelse7, #brynbeskrivelse8 {
@@ -1052,6 +1064,12 @@ margin: 0;
 	margin-bottom: 20px;
 	
 }
+
+.kursusbeskrivelse h4 {
+		color:#882A3F;
+	font-family: 'Lora', serif;
+}
+
 .kursusoverskrift {
 		grid-column: 1/ span 14;
 	text-align: center;
@@ -1075,6 +1093,103 @@ margin: 0;
 	
 }
 
+
+/*om side styling  ------------------------------------*/
+
+.omside {
+	
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	margin: 30px 0 30px 0;
+	background-color: #F6F6F6;
+	padding: 30px 0 30px 0;
+	
+}
+
+
+
+.omtekst {
+	grid-column: 1 / span 14;
+}
+
+
+.ombillede {
+	grid-column: 1 / span 14;
+	text-align: center;
+}
+
+
+/*kontakt   ------------------------------------*/
+
+
+
+.kliniksec {
+	
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	margin: 30px 0 30px 0;
+	background-color: #F6F6F6;
+	padding: 30px 0 30px 0;
+}
+.klinikinfo h4 {
+	color:#882A3F;
+	font-family: 'Lora', serif;
+	
+}
+
+.klinikinfo {
+	grid-column: 1 / span 14;
+}
+
+.klinikfotos {
+	grid-column: 1 / span 14;
+	text-align: center;
+}
+
+
+
+.kontakt {
+	grid-column: 1 / span 14;
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	margin-top: 30px;
+	
+}
+
+
+.kontaktform {
+	grid-column: 1 / span 7;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	
+}
+
+.kontaktform h4 {
+	color:#882A3F;
+	font-family: 'Lora', serif;
+}
+
+#fname, #phone, #emne, #email {
+	width: 100%;
+	display: block;
+	margin: 20px 0 20px 0;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 5px;
+	border: none;
+	color: #504D4D;
+	font-family: 'Lora', serif;
+	
+}
+
+.kontaktinfo {
+	grid-column: 8 / span 7;
+	text-align: center;
+}
+
+.kontaktinfo h4 {
+	color:#882A3F;
+}
 
 
 @media only screen and (min-width: 600px) {
@@ -1172,24 +1287,17 @@ header {
 /* hero på desktop version ---------------------------------------------------*/
 
 .hero {
-	height: 500px;
+
 	grid-column: col-start / span 14;
 }
 
-.heroimg {
-	height: 500px;
-}
 
 
 .herotxt h1 {
 	margin-bottom: 20px;
 }
 
-.overlay {
 
-	height: 500px;
-	
-}	
 	
 	
 /* forside styling ændringer til desktop---------------------------------------------------*/
@@ -1201,19 +1309,14 @@ header {
 
 
 .covidbillede {
-	height: 550px;
+	text-align: center;
 }
 
 .volkommenbox {
 	grid-column: 8 / span 7;
 	}
 	
-.volkommenbillede {
-	
-	height: 550px;
 
-}
-	
 
 /* desktop ændringer i grid: anmeldelser styling-- på forside og kropbehandlinger-------------------------------------------------*/
 
@@ -1253,7 +1356,6 @@ header {
 
 .pakkeA {
 	grid-column: 2 / span 6;}
-}
 
 
 .pakkec {
@@ -1299,10 +1401,60 @@ header {
 	padding-bottom: 30px;
 	
 }
+	
+	/*om side styling  ------------------------------------*/
+
+.omside {
+	grid-column: col-start / span 14;
+	display: grid;
+	
+	
+}
 
 
 
 
+
+.kliniksec {
+	grid-column: col-start / span 14;
+	display: grid;
+	grid-template-columns: repeat(14, [col-start] 1fr);
+	
+}
+
+	
+
+.omtekst {
+	grid-column: 7 / span 7;
+}
+
+.ombillede {
+	grid-column: 2 / span 4;
+	text-align: center;
+}
+
+
+.klinikinfo {
+	margin-bottom: auto;
+	margin-top: auto;
+	grid-column: 2 / span 6;
+}
+
+.klinikfotos {
+	grid-column: 9 / span 4;
+	text-align: center;
+}
+
+/* slideshow ------------------------------------------------*/	
+	
+.slideshow-container {
+
+  width: 500px;
+
+	
+}
+	
+}
 
 
 
