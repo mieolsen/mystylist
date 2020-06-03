@@ -1191,8 +1191,17 @@ text-align: center;
 	color:#882A3F;
 }
 
+.shop {
+	grid-column: 1 / span 14;
+	text-align: center;
+	font-family: 'Lora', serif;
+	color:#882A3F;
+	margin: 100px 0 100px 0;
+}
 
-@media only screen and (min-width: 600px) {
+
+
+@media only screen and (min-width: 800px) {
 
 
 h1 {
