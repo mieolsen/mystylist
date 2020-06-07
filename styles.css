@@ -104,11 +104,6 @@ ul {
 }
 
 
-/* styling af navigat ---------------------------------------------------*/
-
-nav {
-	display: none;
-}
 
 
 
@@ -184,8 +179,13 @@ footer {
 	text-align: center;
 	color: white;
 	background-color: #D2A2A6;
-	height: 60px;
+	padding-bottom: 20px;
 	padding-top:20px;
+}
+
+footer a {
+	color: white;
+	font-size: 40px;
 }
 
 /* styling af hero billede og overlay  ---------------------------------------------------*/
@@ -364,6 +364,7 @@ grid-column: 2 / span 5;
 	grid-template-columns: repeat(7, [col-start] 1fr);
 	padding-bottom: 50px;
 	margin-left: 5px;
+	width: 100%;
 }
 .volkommenbox h2 {
 text-align: center;
@@ -539,7 +540,6 @@ text-align: center;
 
 .permanentbeskrivelse {
 	grid-column: col-start / span 14;
-	background-color: #F6F6F6;
 	padding: 70px;
 	margin-top: 40px;
 }
@@ -730,7 +730,7 @@ text-align: center;
 	grid-column: 2/ span 6;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
-		grid-template-rows: repeat(6, [row-start] 1fr));
+		grid-template-rows: repeat(6, [row-start] 1fr);
 	margin:0px;
 	
 }
@@ -962,7 +962,7 @@ text-align: center;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 		grid-template-rows: repeat(2, [row-start] minmax(min-content, max-content));
-	margin: 20px 20px 20px 0px;
+	
 	
 }
 
@@ -971,11 +971,12 @@ text-align: center;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 	grid-template-rows: repeat(1, [row-start] minmax(min-content, max-content));
-	margin: 20px 0px 20px 20px;
+	
 	
 }
 
 	#konfnavn1, #konfnavn2, #konfnavn3, #konfbeskrivelse1, #konfbeskrivelse2, #konfbeskrivelse3 {
+
 	grid-column: 1/ span 1;
 
 }
@@ -987,7 +988,7 @@ text-align: center;
 
 }
 
-#konfpris1 {
+#konfpris1, #konfpris3{
 	grid-row: row-start/ span 1;
 }
 
@@ -1024,7 +1025,7 @@ text-align: center;
 /* kursus siden -----------------------------------------------------------------------------------------------------------*/
 .kursusbeskrivelse {
 	grid-column: 1/ span 14;
-	background-color: #F6F6F6;
+	
 	padding: 50px;
 	margin-bottom: 20px;
 	
@@ -1128,6 +1129,7 @@ text-align: center;
 	margin-right: auto;
 	margin-left: auto;
 	
+	
 }
 
 .kontaktform h4 {
@@ -1145,6 +1147,10 @@ text-align: center;
 	color: #504D4D;
 	font-family: 'Lora', serif;
 	
+}
+
+#emne {
+	margin-bottom: 50px;
 }
 
 .kontaktinfo {
@@ -1166,7 +1172,7 @@ text-align: center;
 
 
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 600px) {
 
 
 h1 {
@@ -1201,79 +1207,7 @@ p {
 }
 
 
-	
-/* nav ------------------------------------------- */	
-	
-	
-nav {
-  overflow: hidden;
-  display:flex;
-  justify-content: space-around;
-}
-
-nav a {
-  float: left;
-  font-size: 16px;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.styling-drop, .behandling-drop {
-  float: left;
-  overflow: hidden;
-}
-
-.styling-drop .dropknap1, .behandling-drop .dropknap2 {
-  cursor: pointer;
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: black;
-  padding: 14px 16px;
-  background-color: white;
-  margin: 0;
-}
-
-nav a:hover, .styling-drop:hover .dropknap1, .dropknap1:focus, .behandling-drop:hover .dropknap2, .dropknap2:focus {
-  background-color: #D2A2A6;
-}
-
-.indhold  {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.indhold a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.indhold a:hover, {
-  background-color: #D2A2A6;
-}
-
-.visboks {
-  display: block;
-}
-
-	
-	
-	
-	
-	
-	
-	
-	
+		
 	
 	
 /* styling af header ---------------------------------------------------*/
