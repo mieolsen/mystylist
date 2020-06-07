@@ -23,6 +23,10 @@ h1 {
 	font-size: 25px;
 }
 
+h2 {
+	font-size: 30px;
+}
+
  h3 {
 	font-size: 20px;
 	
@@ -340,6 +344,13 @@ grid-column: 1 / span 14;
 	margin-right: 5px;
 	width: 100%;
 }
+
+.covidbox ul {
+	grid-column: 1 / span 7;
+	margin: 0;
+}
+
+
 .covidbox h2 {
 text-align: center;
 grid-column: 2 / span 5;

@@ -71,24 +71,20 @@
 
 @media screen and (max-width: 600px){
 	
-	
-	
-	.nav {
-	justify-content: flex-start;
-	margin-left: 0;
-		
-		
-	}
-  .nav a:not(:first-child), .dropdown .dropbtn {
-    display: none;
-	
-  }
-  .nav a.icon {
+	 .nav a.icon {
     float: right;
     display: block;
 	 
   }
-
+	
+  .nav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+	
+  }
+ .nav {
+	justify-content: flex-start;
+	margin-left: 0;
+}
   .nav.mobile {
     position: relative;
 	display: block;
