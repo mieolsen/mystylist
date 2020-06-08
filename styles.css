@@ -3,6 +3,8 @@
 /*skriftypeændringer!!----------------------------------------------------------------------*/
 
 
+
+
 body {
 	font-family: 'Noto Serif', serif;
 	
@@ -19,12 +21,18 @@ h1 {
 	
 }
 
+.priser h3 {
+	color:#882A3F;
+	
+}
+
+
 h1 {
 	font-size: 25px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 20px;
 }
 
  h3 {
@@ -89,7 +97,7 @@ ul {
 /* booking info på flere sider (med tlf nummer) ------------------------------------------- */
 	
 .info {
-	
+	margin-top: 40px;
 	text-align: center;
 }
 .tlf {
@@ -100,6 +108,7 @@ ul {
 .mereinfo {
 	grid-column: 1/ span 14;
 	text-align: center;
+	
 }
 
 .link {
@@ -343,6 +352,7 @@ grid-column: 1 / span 14;
 	padding-bottom: 50px;
 	margin-right: 5px;
 	width: 100%;
+	width: 100%;
 }
 
 .covidbox ul {
@@ -356,17 +366,24 @@ text-align: center;
 grid-column: 2 / span 5;
 }
 
-.covidbox p, .covidbox h4 {
+.covidbox ul, .covidbox h4 {
 
 grid-column: 2 / span 5;
 	margin: 5px;;
 }
 
 .covidbillede {
-	text-align: center;
+
+		display: block;
+	margin-right: auto;
+	margin-left: auto;
 	grid-column: 2 / span 5;
 	margin-top: 20px;
 	
+}
+
+.covidbillede img {
+	width: 100%;
 }
 
 .volkommenbox {
@@ -385,14 +402,21 @@ grid-column: 2 / span 5;
 .volkommenbox p {
 grid-column: 2 / span 5;
 margin: 0;
+	width: 100%;
 }
 
 
 .volkommenbillede {
-text-align: center;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
 	grid-column: 2 / span 5;
 	margin-top: 20px;
 	
+}
+
+.volkommenbillede img {
+	width: 100%;
 }
 
 
@@ -512,6 +536,27 @@ text-align: center;
 	padding: 20px 20px 20px 20px;
 	
 }
+
+.priser h4 {
+	margin:0;
+}
+
+.horizontal_dotted_line {
+  display: flex;
+  width: 100%;
+  padding: 0px;
+} 
+.horizontal_dotted_line:after {
+  border-bottom: 2px dotted black;
+  content: '';
+  flex: 1;
+	margin-left: 10px;
+	margin-bottom: 6px;
+	
+}
+
+
+
 
 
 
@@ -741,7 +786,7 @@ text-align: center;
 	grid-column: 2/ span 6;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
-		grid-template-rows: repeat(6, [row-start] 1fr);
+	grid-template-rows: repeat(15, [row-start] 1fr);
 	margin:0px;
 	
 }
@@ -767,21 +812,36 @@ text-align: center;
 
 }
 
-#brynpris1, #brynpris6 {
+#brynnavn1, #brynpris1 {
+	grid-row: 1/ span 1;
+}
+#brynnavn2, #brynpris2 {
+	grid-row: 4/ span 1;
+}
+#brynnavn3, #brynpris3 {
+	grid-row: 7/ span 1;
+}
+#brynnavn4, #brynpris4 {
+	grid-row: 10/ span 1;
+}
+
+#brynnavn5, #brynpris5 {
+	grid-row: 13/ span 1;
+}
+
+
+
+ #brynpris6 {
 	grid-row: 1/ span 1;
 	color:#882A3F;
 }
 
-#brynpris2 {
-	grid-row: 2/ span 1;
-}
-#brynpris3, #brynpris7{
+
+ #brynpris7{
 	grid-row: 3/ span 1;
 }
-#brynpris4 {
-	grid-row: 4/ span 1;
-}
-#brynpris5, #brynpris8 {
+
+ #brynpris8 {
 	grid-row: 5/ span 1;
 }
 
@@ -801,7 +861,7 @@ text-align: center;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 	grid-template-rows: repeat(9, [row-start] minmax(min-content, max-content));
-	margin:0;	
+	margin-bottom:50px;	
 }
 
 	#voksnavn1, #voksnavn2, #voksnavn3, #voksnavn4, #voksnavn5, #voksnavn6, #voksnavn7, #voksnavn8, #voksnavn9, #voksnavn10, #voksnavn11, #voksnavn12, #voksnavn13, #voksnavn14, #voksnavn15, #voksnavn16, #voksnavn17, #voksnavn18, #voksnavn19 {
@@ -852,19 +912,28 @@ text-align: center;
 
 
 /* bryllup side prisliste  ----------------------------------------------------------------------------------------------------------------------- */
+	
 #proveoverskrift {
-	grid-column: 2/ span 6;
+	grid-column: 2/ span 5;
+	grid-row: 1 / span 1;
 }
 #pigeoverskrift {
-	grid-column: 8/ span 6;
+	display:none;
+	
 }
+#pigeoverskrift2 {
+	display: block;
+	grid-column: 8/ span 5;
+	
+}
+	
 
 .provesek1 {
 	grid-column: 2/ span 6;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 		grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
-	margin: 20px 20px 20px 0px;
+	margin:0px;
 	
 }
 
@@ -874,7 +943,7 @@ text-align: center;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 	grid-template-rows: repeat(6, [row-start] minmax(min-content, max-content));
-	margin: 20px 0px 20px 20px;
+	margin: 0;
 	
 }
 
@@ -937,7 +1006,7 @@ text-align: center;
 	display: grid;
 	grid-template-columns: 8fr 2fr;
 		grid-template-rows: repeat(2, [row-start] minmax(min-content, max-content));
-	margin: 20px 20px 20px 0px;
+	margin: 0;
 	
 }
 
@@ -1002,6 +1071,11 @@ text-align: center;
 #konfpris1, #konfpris3{
 	grid-row: row-start/ span 1;
 }
+
+#konfpris2{
+	grid-row: 3/ span 1;
+}
+
 
 
 /* styling ansigstbehandlinger prisliste -----------------------------------------------------------------------------------------------------------*/
@@ -1123,7 +1197,13 @@ text-align: center;
 	text-align: center;
 }
 
+.klinikfoto {
+	width: 100%;
+}
 
+.kort {
+	width: 100%;
+}
 
 .kontakt {
 	grid-column: 1 / span 14;
@@ -1182,6 +1262,10 @@ text-align: center;
 }
 
 
+.underskrift {
+	width: 50px;
+}
+
 
 @media only screen and (min-width: 600px) {
 
@@ -1190,6 +1274,10 @@ h1 {
 	font-size: 60px;
 }
 
+	h2 {
+	font-size: 20px;
+}
+	
 h3 {
 	font-size: 25px;
 	
@@ -1313,10 +1401,9 @@ header {
 }
 
 
-.covidbillede {
-	text-align: center;
-}
 
+
+	
 .volkommenbox {
 	grid-column: 8 / span 7;
 	}
@@ -1410,6 +1497,7 @@ header {
 	grid-template-columns: repeat(14, [col-start] 1fr);
 	margin: 60px 0 60px 0 ;
 	padding-bottom: 30px;
+	width: 100%;
 	
 }
 	
@@ -1455,6 +1543,20 @@ header {
 	grid-column: 9 / span 4;
 	text-align: center;
 }
+	
+
+#pigeoverskrift {
+	display: block;
+	grid-column: 8/ span 5;
+	
+}
+	
+#pigeoverskrift2 {
+	display: none;
+	
+}
+	
+	
 
 /* slideshow ------------------------------------------------*/	
 	
